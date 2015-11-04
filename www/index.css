@@ -3,5 +3,9 @@
 
 #keyboard {
 	align-content:center;
-	background-color:#042431;
+	background-color:#023757;
+	border-style:outset;
+	border-width:2px;
+	border-color:#2C739F
+	
 }
