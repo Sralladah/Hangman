@@ -1,2 +1,2 @@
 # Hangman
-hangman for android
+An experimental game of hangman (side project)
