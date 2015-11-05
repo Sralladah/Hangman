@@ -1,12 +1,12 @@
 @charset "utf-8";
 /* CSS Document */
-@media (max-width: 360px){
+@media (max-width: 360px) {
 }
 
 #keyboard {
-	align-content:center;
-	background-color:#023757;
-	border-style:outset;
-	border-width:2px;
-	border-color:#2C739F;
+    align-content: center;
+    background-color: #023757;
+    border-style: outset;
+    border-width: 2px;
+    border-color: #2C739F;
 }

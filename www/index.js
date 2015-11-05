@@ -6,12 +6,22 @@ var queuedLetter;
 var image;
 
 function hideLetter() {
-	for(index=0; index < usedLetters.length; index++){
-		queuedLetter = usedLetters[index];
-		image = document.getElementById(queuedLetter);
-		image.src = "images/btnUsed.jpg";
-	}
+    for (index = 0; index < usedLetters.length; index++) {
+        queuedLetter = usedLetters[index];
+        image = document.getElementById(queuedLetter);
+        image.src = "images/btnUsed.jpg";
+    }
 }
+
+function resetLetters() {
+    for (index = 0; index < usedLetters.length; index++) {
+        queuedLetter = usedLetters[index];
+        image = document.getElementById(queuedLetter);
+        image.src = "images/btn" + queuedLetter + ".jpg";
+    }
+    usedLetters = [];
+}
+
 function aClick() {
     usedLetters.push("A");
     hideLetter();
