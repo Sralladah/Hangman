@@ -9,7 +9,7 @@ function hideLetter() {
     for (index = 0; index < usedLetters.length; index++) {
         queuedLetter = usedLetters[index];
         image = document.getElementById(queuedLetter);
-        image.src = "images/btnUsed.jpg";
+        image.src = "Images/btnUsed.jpg";
     }
 }
 
@@ -17,7 +17,7 @@ function resetLetters() {
     for (index = 0; index < usedLetters.length; index++) {
         queuedLetter = usedLetters[index];
         image = document.getElementById(queuedLetter);
-        image.src = "images/btn" + queuedLetter + ".jpg";
+        image.src = "Images/btn" + queuedLetter + ".jpg";
     }
     usedLetters = [];
 }
