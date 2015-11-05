@@ -11,6 +11,7 @@ function hideLetter() {
         image = document.getElementById(queuedLetter);
         image.src = "Images/btnUsed.jpg";
     }
+    document.getElementById("display").innerHTML = usedLetters.join("");
 }
 
 function resetLetters() {
@@ -20,8 +21,10 @@ function resetLetters() {
         image.src = "Images/btn" + queuedLetter + ".jpg";
     }
     usedLetters = [];
+    document.getElementById("display").innerHTML = usedLetters;
 }
 
+var alphabet = [A, B, C, D, E, F, G, H, I, J, K, L, M, O, P, Q, R, S, T, U, V, W, X, Y, Z];
 function aClick() {
     usedLetters.push("A");
     hideLetter();

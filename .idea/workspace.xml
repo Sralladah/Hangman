@@ -24,8 +24,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.846154">
-              <caret line="35" column="57" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="57" />
+            <state vertical-scroll-proportion="-7.269231">
+              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -34,10 +34,9 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.30313015">
-              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.6556837">
+              <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
               <folding>
-                <element signature="n#!!block;n#aClick#0" expanded="false" />
                 <element signature="n#!!block;n#bClick#0" expanded="false" />
                 <element signature="n#!!block;n#cClick#0" expanded="false" />
                 <element signature="n#!!block;n#dClick#0" expanded="false" />
@@ -71,8 +70,8 @@
       <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state vertical-scroll-proportion="-8.5">
+              <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -96,8 +95,8 @@
       <list>
         <option value="chrome-extension://cfhdojbkjhnklbpkdaibdccddilifddb/include.postload.js" />
         <option value="$PROJECT_DIR$/www/letterClicks.js" />
-        <option value="$PROJECT_DIR$/www/index.css" />
         <option value="$PROJECT_DIR$/www/index.html" />
+        <option value="$PROJECT_DIR$/www/index.css" />
         <option value="$PROJECT_DIR$/www/index.js" />
       </list>
     </option>
@@ -293,7 +292,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="10" />
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -311,7 +310,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!block;n#aClick#0" expanded="false" />
             <element signature="n#!!block;n#bClick#0" expanded="false" />
             <element signature="n#!!block;n#cClick#0" expanded="false" />
             <element signature="n#!!block;n#dClick#0" expanded="false" />
@@ -362,7 +360,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
-            <element signature="n#!!block;n#aClick#0" expanded="false" />
             <element signature="n#!!block;n#bClick#0" expanded="false" />
             <element signature="n#!!block;n#cClick#0" expanded="false" />
             <element signature="n#!!block;n#dClick#0" expanded="false" />
@@ -413,7 +410,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!block;n#aClick#0" expanded="false" />
             <element signature="n#!!block;n#bClick#0" expanded="false" />
             <element signature="n#!!block;n#cClick#0" expanded="false" />
             <element signature="n#!!block;n#dClick#0" expanded="false" />
@@ -451,28 +447,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.css">
+    <entry file="file://$PROJECT_DIR$/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state vertical-scroll-proportion="-7.269231">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
+    <entry file="file://$PROJECT_DIR$/www/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.846154">
-          <caret line="35" column="57" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="57" />
+        <state vertical-scroll-proportion="-8.5">
+          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30313015">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.6556837">
+          <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
           <folding>
-            <element signature="n#!!block;n#aClick#0" expanded="false" />
             <element signature="n#!!block;n#bClick#0" expanded="false" />
             <element signature="n#!!block;n#cClick#0" expanded="false" />
             <element signature="n#!!block;n#dClick#0" expanded="false" />

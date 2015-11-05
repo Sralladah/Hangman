@@ -3,8 +3,18 @@
 @media (max-width: 360px) {
 }
 
+p {
+    font-size: 25px;
+    font-family: Verdana, Geneva, sans-serif;
+    display: inline
+}
+
+#text {
+    text-align: center;
+    background-color: #68a5ff;
+}
+
 #keyboard {
-    align-content: center;
     background-color: #023757;
     border-style: outset;
     border-width: 2px;
