@@ -13,8 +13,14 @@ h1{
     text-align: center;
     color: #ffffff;
     font-size: 40px;
-
 }
+
+p {
+    font-size: 25px;
+    font-family: Verdana, Geneva, sans-serif;
+    display: inline;
+}
+
 #difficulty {
     align-content: center;
 }
