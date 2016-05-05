@@ -2,17 +2,24 @@
 /* CSS Document */
 @media (max-width: 360px) {
 }
+
+
 body {
-    background-color: #000000;
-
-}
-p {
-    font-size: 25px;
-    font-family: Verdana, Geneva, sans-serif;
-    display: inline
+    background-color: #023756;
+    font-family: Raavi, Geneva, sans-serif;
 }
 
+h1{
+    text-align: center;
+    color: #ffffff;
+    font-size: 40px;
+
+}
+#difficulty {
+    align-content: center;
+}
 #text {
+    width: 100%;
     text-align: center;
     background-color: #68a5ff;
 }

@@ -1,46 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>Hangman</title>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>difficultyPage</title>
     <link href="index.css" rel="stylesheet" type="text/css">
     <script src="index.js"></script>
+
 </head>
-
 <body>
-<img id="hangmanImage" src="Images/hangmanBorder.jpg">
+<img id="logo" src="Images/hangmanLogo.jpg"/>
 
-<div id="text"><p> > </p><p id="display"></p></div>
-
-<div id="keyboard">
-    <img id="A" onclick="aClick()" src="Images/btnA.jpg">
-    <img id="B" onclick="bClick()" src="Images/btnB.jpg">
-    <img id="C" onclick="cClick()" src="Images/btnC.jpg">
-    <img id="D" onclick="dClick()" src="Images/btnD.jpg">
-    <img id="E" onclick="eClick()" src="Images/btnE.jpg">
-    <img id="F" onclick="fClick()" src="Images/btnF.jpg">
-    <img id="G" onclick="gClick()" src="Images/btnG.jpg">
-    <img id="H" onclick="hClick()" src="Images/btnH.jpg">
-    <img id="I" onclick="iClick()" src="Images/btnI.jpg">
-    <img id="J" onclick="jClick()" src="Images/btnJ.jpg">
-    <img id="K" onclick="kClick()" src="Images/btnK.jpg">
-    <img id="L" onclick="lClick()" src="Images/btnL.jpg">
-    <img id="M" onclick="mClick()" src="Images/btnM.jpg">
-    <img id="N" onclick="nClick()" src="Images/btnN.jpg">
-    <img id="O" onclick="oClick()" src="Images/btnO.jpg">
-    <img id="P" onclick="pClick()" src="Images/btnP.jpg">
-    <img id="Q" onclick="qClick()" src="Images/btnQ.jpg">
-    <img id="R" onclick="rClick()" src="Images/btnR.jpg">
-    <img id="S" onclick="sClick()" src="Images/btnS.jpg">
-    <img id="T" onclick="tClick()" src="Images/btnT.jpg">
-    <img id="U" onclick="uClick()" src="Images/btnU.jpg">
-    <img id="V" onclick="vClick()" src="Images/btnV.jpg">
-    <img id="W" onclick="wClick()" src="Images/btnW.jpg">
-    <img id="X" onclick="xClick()" src="Images/btnX.jpg">
-    <img id="Y" onclick="yClick()" src="Images/btnY.jpg">
-    <img id="Z" onclick="zClick()" src="Images/btnZ.jpg">
-    <img id="Reset" onclick="resetLetters()" src="Images/btnReset.jpg">
-</div>
-
+<div id="difficulty"><h1>Choose a difficuly</h1></div>
+<div><a href="hangman.html"><img id="easy" onclick="easy()" src="Images/btnEasy.jpg"></a></div>
+<div><a href="hangman.html"><img id="medium" onclick="medium()" src="Images/btnMedium.jpg"></a></div>
+<div><a href="hangman.html"><img id="hard" onclick="hard()" src="Images/btnHard.jpg"></a></div>
 </body>
 </html>
