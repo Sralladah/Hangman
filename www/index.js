@@ -1,7 +1,7 @@
 // JavaScript Document
 
 var image;
-var lives = 10; //amount of lives
+var lives = 10;
 var word; //will be used to keep the word in play
 var currentGuess = "";
 var letterFound = false; //used to determinate if a letter was found after a guess, so no lives are taken away
@@ -60,6 +60,7 @@ function newGame() {
 }
 
 function guessCheck() {
+
     //1. Check if the player already used this letter, if so skip guessCheck.
     for (var i = 0; i < usedGuesses.length + 1; i++) {
         if (usedGuesses[i] == currentGuess) {
@@ -85,9 +86,14 @@ function guessCheck() {
             //if guess was wrong, deduct a life
             else if (i == wordToGuess.length && letterFound == false) {
                 lives--;
+
             }
 
         }
+
+        //update the visuals
+        livesImage = document.getElementById("hangmanImage");
+        livesImage.src = "Images/hangmanLives"+lives+".jpg";
 
         //if player guessed all the letters, end game
         if (hiddenWord.join("") == word) {
@@ -99,6 +105,7 @@ function guessCheck() {
 
         //if player lost all their lives, end game
         else if(lives == 0){
+            endGame = confirm("You Lost! The word was: '"+wordToGuess.join("")+"'. Go back to menu?");
             if (endGame == true) {
                 window.location.href = "index.html";
             }
@@ -232,4 +239,11 @@ function yClick() {
 function zClick() {
     currentGuess = "Z";
     guessCheck();
+}
+
+function testButton() {
+    lives--
+    //update the visuals
+    livesImage = document.getElementById("hangmanImage");
+    livesImage.src = "Images/hangmanLives"+lives+".jpg";
 }
