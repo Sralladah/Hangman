@@ -11,8 +11,33 @@
 <img id="logo" src="Images/hangmanLogo.jpg"/>
 
 <div id="difficulty"><h1>Choose a difficuly</h1></div>
-<div><a href="hangman.html"><img id="easy" onclick="easy()" src="Images/btnEasy.jpg"></a></div>
-<div><a href="hangman.html"><img id="medium" onclick="medium()" src="Images/btnMedium.jpg"></a></div>
-<div><a href="hangman.html"><img id="hard" onclick="hard()" src="Images/btnHard.jpg"></a></div>
+<div> <a href="hangman.html"> <img id="easy" src="Images/btnEasy.jpg"> </a> </div>
+<script>
+    //i thought this would of worked, but i couldnt figure out how to return the array
+    document.getElementById("easy").onclick = function() {easy()};
+
+function easy() {
+    wordsList = ["LAMP", "ROAD", "SOFA", "LADY", "SNOW", "SPACE", "NOISE", "DOGGY", "HOUSE", "STEEL", "STEREO", "PILLOW", "CEREAL", "BUTTON", "CIRCLE", "BALLOON", "STATION", "DRAWING", "BICYCLE", "FLOWERS"];
+}</script>
+
+
+<div> <a href="hangman.html"> <img id="medium" onclick="medium()" src="Images/btnMedium.jpg"> </a> </div>
+<script>
+    document.getElementById("easy").onclick = function() {medium()};
+
+    function medium() {
+        wordsList = ["PAINTING", "MONEYBAG", "SAPPHIRE", "AROMATIC", "CAPTIONS", "TELEPHONE", "GODFATHER", "OFFENSIVE", "EFFICIENT", "TELESCOPE", "BOTTOMLESS", "WHIRLWINDS", "SPECIALITY", "PROGRAMING", "TELEVISION", "UNBREAKABLE", "APPLICATION", "BODYBUILDER", "ELECTRICITY", "MASTERPIECE"]
+}</script>
+
+<div> <a href="hangman.html"> <img id="hard" onclick="hard()" src="Images/btnHard.jpg"> </a> </div>
+<script>
+    document.getElementById("easy").onclick = function() {hard()};
+
+    function hard() {
+        wordsList = ["ASTRONOMICAL", "VOCABULARIES", "THANKSGIVING", "STOCKHOLDERS", "RUSTPROOFING", "EXTENDABILITY", "INCORPORATION2", "NONFUNCTIONAL", "PERPENDICULAR", "RECOMMENDABLE", "MISCALCULATING", "AMBASSADORSHIP", "DECONSTRUCTIVE", "IMPRACTICALITY", "ILLEGITIMATELY", "BIOLUMINESCENCE", "WRONGHEADEDNESS", "TROUBLESHOOTING", "SURVIVABILITIES", "PROCRASTINATION"]
+}</script>
+<div>
+<p id="disclamer">(Difficulty settings don't work)</p>
+</div>
 </body>
 </html>

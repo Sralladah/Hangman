@@ -5,12 +5,20 @@
     <title>Hangman</title>
     <link href="index.css" rel="stylesheet" type="text/css">
     <script src="index.js"></script>
+    <script src="jquery.mobile-1.4.5.min.js"></script>
+    <script src="jquery-1.12.3.min.js"></script>
 </head>
 
 <body>
-<img id="hangmanImage" src="Images/hangmanBorder.jpg">
+<img id="hangmanImage" src="Images/hangmanLives0.jpg">
 
 <div id="text"><p> > </p><p id="display"></p></div>
+<script>
+    if(hiddenWord = []) {
+        newGame()
+    }
+    document.getElementById("display").innerHTML = hiddenWord.join("");
+</script>
 
 <div id="keyboard">
     <img id="A" onclick="aClick()" src="Images/btnA.jpg">
@@ -43,6 +51,7 @@
     <img id="Y" onclick="yClick()" src="Images/btnY.jpg">
     <img id="Z" onclick="zClick()" src="Images/btnZ.jpg">
     <img id="Reset" onclick="resetLetters()" src="Images/btnReset.jpg">
+
 </div>
 
 </body>
