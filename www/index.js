@@ -10,25 +10,23 @@ var used = false;
 var hiddenWord = [];
 
 //The words list is declared full only because i can't get difficulty selection working.
-var wordsList = ["LAMP", "ROAD", "SOFA", "LADY", "SNOW", "SPACE", "NOISE", "DOGGY", "HOUSE", "STEEL", "STEREO", "PILLOW", "CEREAL", "BUTTON", "CIRCLE", "BALLOON", "STATION", "DRAWING", "BICYCLE", "FLOWERS"];
+var wordsList = ["LAMP", "ROAD", "SOFA", "LADY", "SNOW", "SPACE", "NOISE", "DOGGY", "HOUSE", "STEEL", "STEREO", "PILLOW", "CEREAL", "BUTTON", "CIRCLE", "BALLOON", "STATION", "DRAWING", "BICYCLE", "FLOWERS", "PAINTING", "MONEYBAG", "SAPPHIRE", "AROMATIC", "CAPTIONS", "TELEPHONE", "GODFATHER", "OFFENSIVE", "EFFICIENT", "TELESCOPE", "BOTTOMLESS", "WHIRLWINDS", "SPECIALITY", "PROGRAMING", "TELEVISION", "UNBREAKABLE", "APPLICATION", "BODYBUILDER", "ELECTRICITY", "MASTERPIECE"];
 
 var endGame;
 var wordToGuess = [];
 
-
-
-//TODO difficulty selection not working
+/*TODO difficulty selection not working
 //set the words list according to the difficulty selected
-/*function easy() {
-    wordsList = ["LAMP", "ROAD", "SOFA", "LADY", "SNOW", "SPACE", "NOISE", "DOGGY", "HOUSE", "STEEL", "STEREO", "PILLOW", "CEREAL", "BUTTON", "CIRCLE", "BALLOON", "STATION", "DRAWING", "BICYCLE", "FLOWERS"];
-}
-
-function medium() {
-    wordsList = ["PAINTING", "MONEYBAG", "SAPPHIRE", "AROMATIC", "CAPTIONS", "TELEPHONE", "GODFATHER", "OFFENSIVE", "EFFICIENT", "TELESCOPE", "BOTTOMLESS", "WHIRLWINDS", "SPECIALITY", "PROGRAMING", "TELEVISION", "UNBREAKABLE", "APPLICATION", "BODYBUILDER", "ELECTRICITY", "MASTERPIECE"]
+function easy() {
+ wordsList = ["LAMP", "ROAD", "SOFA", "LADY", "SNOW", "SPACE", "NOISE", "DOGGY", "HOUSE", "STEEL", "STEREO", "PILLOW", "CEREAL", "BUTTON", "CIRCLE", "BALLOON", "STATION", "DRAWING", "BICYCLE", "FLOWERS"];
  }
 
-function hard() {
-    wordsList = ["ASTRONOMICAL", "VOCABULARIES", "THANKSGIVING", "STOCKHOLDERS", "RUSTPROOFING", "EXTENDABILITY", "INCORPORATION2", "NONFUNCTIONAL", "PERPENDICULAR", "RECOMMENDABLE", "MISCALCULATING", "AMBASSADORSHIP", "DECONSTRUCTIVE", "IMPRACTICALITY", "ILLEGITIMATELY", "BIOLUMINESCENCE", "WRONGHEADEDNESS", "TROUBLESHOOTING", "SURVIVABILITIES", "PROCRASTINATION"]
+ function medium() {
+ wordsList = ["PAINTING", "MONEYBAG", "SAPPHIRE", "AROMATIC", "CAPTIONS", "TELEPHONE", "GODFATHER", "OFFENSIVE", "EFFICIENT", "TELESCOPE", "BOTTOMLESS", "WHIRLWINDS", "SPECIALITY", "PROGRAMING", "TELEVISION", "UNBREAKABLE", "APPLICATION", "BODYBUILDER", "ELECTRICITY", "MASTERPIECE"]
+ }
+
+ function hard() {
+ wordsList = ["ASTRONOMICAL", "VOCABULARIES", "THANKSGIVING", "STOCKHOLDERS", "RUSTPROOFING", "EXTENDABILITY", "INCORPORATION2", "NONFUNCTIONAL", "PERPENDICULAR", "RECOMMENDABLE", "MISCALCULATING", "AMBASSADORSHIP", "DECONSTRUCTIVE", "IMPRACTICALITY", "ILLEGITIMATELY", "BIOLUMINESCENCE", "WRONGHEADEDNESS", "TROUBLESHOOTING", "SURVIVABILITIES", "PROCRASTINATION"]
  }*/
 
 //First, pick a word from the array
@@ -56,7 +54,7 @@ function newGame() {
     while (hiddenWord.length < wordToGuess.length) {
         hiddenWord.push("-");
     }
-   return hiddenWord;
+    return hiddenWord;
 }
 
 function guessCheck() {
@@ -86,8 +84,8 @@ function guessCheck() {
 
         //if guess was wrong, deduct a life
         if (letterFound == false) {
-        lives--;
-    }
+            lives--;
+        }
         //update the visuals
         var livesImage = document.getElementById("hangmanImage");
         livesImage.src = "Images/hangmanLives"+lives+".jpg";
@@ -121,16 +119,16 @@ function guessCheck() {
 /*
  //this is only a debugging feature, allows to add a special button that resets used letters array
  //to check guessCheck works properly
-function resetLetters() {
-    for (index = 0; index < usedGuesses.length; index++) {
-        queuedLetter = usedGuesses[index];
-        image = document.getElementById(queuedLetter);
-        image.src = "Images/btn" + queuedLetter + ".jpg";
-    }
-    usedGuesses = [];
-    document.getElementById("display").innerHTML = usedGuesses;
-}
-*/
+ function resetLetters() {
+ for (index = 0; index < usedGuesses.length; index++) {
+ queuedLetter = usedGuesses[index];
+ image = document.getElementById(queuedLetter);
+ image.src = "Images/btn" + queuedLetter + ".jpg";
+ }
+ usedGuesses = [];
+ document.getElementById("display").innerHTML = usedGuesses;
+ }
+ */
 
 //These are the functions for each button, i tried to find a more efficient way to do this but couldn't because of HTML
 function aClick() {
@@ -238,9 +236,9 @@ function zClick() {
     guessCheck();
 }
 
-function testButton() {
-    lives--;
-    //update the visuals
-    var livesImage = document.getElementById("hangmanImage");
-    livesImage.src = "Images/hangmanLives"+lives+".jpg";
-}
+/*function testButton() {
+ lives--;
+ //update the visuals
+ var livesImage = document.getElementById("hangmanImage");
+ livesImage.src = "Images/hangmanLives"+lives+".jpg";
+ }*/
