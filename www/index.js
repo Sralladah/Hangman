@@ -82,17 +82,14 @@ function guessCheck() {
                 letterFound = true;
                 document.getElementById("display").innerHTML = hiddenWord.join("");
             }
-
-            //if guess was wrong, deduct a life
-            else if (i == wordToGuess.length && letterFound == false) {
-                lives--;
-
-            }
-
         }
 
+        //if guess was wrong, deduct a life
+        if (letterFound == false) {
+        lives--;
+    }
         //update the visuals
-        livesImage = document.getElementById("hangmanImage");
+        var livesImage = document.getElementById("hangmanImage");
         livesImage.src = "Images/hangmanLives"+lives+".jpg";
 
         //if player guessed all the letters, end game
@@ -104,7 +101,7 @@ function guessCheck() {
         }
 
         //if player lost all their lives, end game
-        else if(lives == 0){
+        if(lives == 0){
             endGame = confirm("You Lost! The word was: '"+wordToGuess.join("")+"'. Go back to menu?");
             if (endGame == true) {
                 window.location.href = "index.html";
@@ -242,8 +239,8 @@ function zClick() {
 }
 
 function testButton() {
-    lives--
+    lives--;
     //update the visuals
-    livesImage = document.getElementById("hangmanImage");
+    var livesImage = document.getElementById("hangmanImage");
     livesImage.src = "Images/hangmanLives"+lives+".jpg";
 }
